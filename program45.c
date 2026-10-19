@@ -1,0 +1,31 @@
+
+// Input : 10
+// 
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+
+    // for(iCnt = 1; iCnt <= iNo; iCnt+=2)  // shorthand assingment operator
+    for(iCnt = 1; iCnt <= iNo; iCnt = iCnt+2)   // shorthand operator
+    {
+        printf("%d\t",iCnt);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter the frequency: \n");
+    scanf("%d", &iValue);
+
+    Display(iValue);
+
+    return EXIT_SUCCESS;
+}
+
